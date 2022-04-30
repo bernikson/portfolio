@@ -64,7 +64,7 @@ const App = () => {
 	const handleSubmit = async (e) => {
 		try {
 			e.preventDefault();
-			await axios.post("http://localhost:5000/send_email ", {
+			await axios.post("/send_email ", {
 				contactInfo,
 			});
 			setContactInfo({
