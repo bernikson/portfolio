@@ -8,6 +8,24 @@ const app = express();
 app.use(cors());
 app.use(express.json())
 
+const __filename = fileURLToPath(import.meta.url);
+let __dirname = path.dirname(__filename);
+
+let NODE_ENV = 'production'
+
+__dirname = path.resolve();
+if (NODE_ENV) {
+	app.use(express.static(path.join(__dirname,'/client/build')))
+	app.get('*',(req,res) => {
+		res.sendFile(path.resolve(__dirname,'client','build','index.html'))
+	})
+} else {
+	app.get("/", (req, res) => {
+		res.send("API is running");
+	});
+}
+
+
 const sendEmail = (options) => {
 	try {
 		const transporter = nodemailer.createTransport({
@@ -58,19 +76,3 @@ app.listen(process.env.PORT || 5000, (error) => {
 });
 
 
-const __filename = fileURLToPath(import.meta.url);
-let __dirname = path.dirname(__filename);
-
-let NODE_ENV = 'production'
-
-__dirname = path.resolve();
-if (NODE_ENV) {
-	app.use(express.static(path.join(__dirname,'/client/build')))
-	app.get('*',(req,res) => {
-		res.sendFile(path.resolve(__dirname,'client','build','index.html'))
-	})
-} else {
-	app.get("/", (req, res) => {
-		res.send("API is running");
-	});
-}
