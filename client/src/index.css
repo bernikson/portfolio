@@ -1,0 +1,36 @@
+:root {
+	--mainColor: #070B0F;
+	--secondaryColor: #0C131A;
+	--cyan: #30D7D5;
+}
+
+
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Maven Pro', sans-serif;
+	overflow-x: hidden !important;
+	background-color: var(--mainColor)
+}
+
+/*html {
+	width: 100% !important;
+	overflow-x: hidden !important;
+}*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--mainColor);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+   background: var(--cyan);
+     border-radius: 100px;
+}
