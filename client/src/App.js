@@ -318,6 +318,49 @@ const App = () => {
 							</h5>
 						</aside>
 					</div>
+					<div
+						onClick={() =>
+							window.open(
+								"https://berniko-bluemeg.herokuapp.com",
+								"_blank"
+							)
+						}
+					>
+						<div></div>
+						<aside>
+							<h5>
+								Name: <span>Berniko-bluemag</span>
+							</h5>
+							<h5>
+								Description:
+								<span>
+									I made this landing page for a client for his company
+								</span>
+							</h5>
+						</aside>
+					</div>
+					<div
+						onClick={() =>
+							window.open(
+								"https://berniko-mirtillo.herokuapp.com",
+								"_blank"
+							)
+						}
+					>
+						<div></div>
+						<aside>
+							<h5>
+								Name: <span>Berniko-mirtillo
+								</span>
+							</h5>
+							<h5>
+								Description:
+								<span>
+									I made this website for a client for his company
+								</span>
+							</h5>
+						</aside>
+					</div>
 				</article>
 			</section>
 			<section id="services">
