@@ -317,6 +317,14 @@ header > a > svg {
   background-image: url("./images/fourthImage.PNG");
 }
 
+#projects > article > div:nth-child(5) > div {
+  background-image: url("./images/fifthImage.png");
+}
+
+#projects > article > div:nth-child(6) > div {
+  background-image: url("./images/sixthImage.png");
+}
+
 #projects > article > div {
   display: flex;
   flex-direction: column;
@@ -348,7 +356,7 @@ header > a > svg {
 }
 
 #projects > article > div > aside > h5 {
-  font-size: clamp(1.3rem, 1vw + 0.1rem, 3rem);
+  font-size: clamp(1rem, 1vw + 0.1rem, 3rem);
   color: var(--cyan);
   margin: 0;
   padding: 0.3rem 0;
