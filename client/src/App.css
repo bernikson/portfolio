@@ -325,6 +325,10 @@ header > a > svg {
   background-image: url("./images/sixthImage.png");
 }
 
+#projects > article > div:nth-child(7) > div {
+  background-image: url("./images/seventhImage.png");
+}
+
 #projects > article > div {
   display: flex;
   flex-direction: column;

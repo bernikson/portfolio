@@ -369,6 +369,28 @@ const App = () => {
               </h5>
             </aside>
           </div>
+          <div
+            onClick={() =>
+              window.open(
+                "https://www.figma.com/file/27JPVmGkh5wp4oAGVkz8EQ/Untitled?node-id=0%3A1",
+                "_blank"
+              )
+            }
+          >
+            <div></div>
+            <aside>
+              <h5>
+                Name: <span>Bernstore</span>
+              </h5>
+              <h5>
+                Description:
+                <span>
+                  I made this e commerce design, I can also build it and give it
+                  full store functionallity. But I am lazy
+                </span>
+              </h5>
+            </aside>
+          </div>
         </article>
       </section>
       <section id="services">
