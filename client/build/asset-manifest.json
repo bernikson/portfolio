@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.2330d652.css",
-    "main.js": "/static/js/main.bdd23a91.js",
+    "main.css": "/static/css/main.c89bd1a8.css",
+    "main.js": "/static/js/main.6c243789.js",
     "static/media/fourthImage.PNG": "/static/media/fourthImage.41b409d98fb1273a2ee6.PNG",
     "static/media/seventhImage.png": "/static/media/seventhImage.5d443513620f2cc02a6a.png",
     "static/media/thirdImage.PNG": "/static/media/thirdImage.b1e213e6d2de3f359abd.PNG",
+    "static/media/eightImage.png": "/static/media/eightImage.9ac67003eadef364b8f4.png",
     "static/media/fifthImage.png": "/static/media/fifthImage.e94a3e36c45ffe4d8495.png",
     "static/media/firstImage.PNG": "/static/media/firstImage.b2a25a2d839c98ab34f9.PNG",
     "static/media/sixthImage.png": "/static/media/sixthImage.4b19e96459281dde3ece.png",
     "static/media/secondImage.PNG": "/static/media/secondImage.e18a8a584cd0e079640f.PNG",
     "static/media/forestTwo.png": "/static/media/forestTwo.0564764e88efad2cf648.png",
     "static/media/forest.png": "/static/media/forest.f760180a4065e802dfd0.png",
+    "static/media/logo.png": "/static/media/logo.134a692f541f49b3d7ea.png",
     "index.html": "/index.html",
-    "main.2330d652.css.map": "/static/css/main.2330d652.css.map",
-    "main.bdd23a91.js.map": "/static/js/main.bdd23a91.js.map"
+    "main.c89bd1a8.css.map": "/static/css/main.c89bd1a8.css.map",
+    "main.6c243789.js.map": "/static/js/main.6c243789.js.map"
   },
   "entrypoints": [
-    "static/css/main.2330d652.css",
-    "static/js/main.bdd23a91.js"
+    "static/css/main.c89bd1a8.css",
+    "static/js/main.6c243789.js"
   ]
 }

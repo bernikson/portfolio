@@ -22,6 +22,7 @@ import SlackIcon from "./svgs/Slack";
 import SublimeIcon from "./svgs/Sublime";
 import TelegramIcon from "./svgs/Telegram";
 import VSIcon from "./svgs/VS";
+import Typescript from "./svgs/Typescript";
 import axios from "axios";
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -36,18 +37,6 @@ const App = () => {
     email: "",
     title: "",
     message: "",
-  });
-
-  const handleScroll = () => {
-    if (window.scrollY >= 80) {
-      toggleScrollNav(true);
-    } else {
-      toggleScrollNav(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
   });
 
   const { name, email, title, message } = contactInfo;
@@ -82,6 +71,7 @@ const App = () => {
     <div>
       <div id="bgWrapper">
         <nav className={scrollNav ? "scrollNav" : undefined}>
+          <article id="web-logo"></article>
           <h1>Berniko</h1>
           <ul className={responsiveNav ? "responsive-nav" : undefined}>
             <li>
@@ -236,6 +226,10 @@ const App = () => {
                 <ReactIcon />
                 <span style={{ color: "#30D7D5" }}>React</span>
               </div>
+              <div className="skillWrapper">
+                <Typescript color="#3742fa" />
+                <span style={{ color: "#3742fa" }}>Typescript</span>
+              </div>
             </div>
             <FrontendIllustration />
           </aside>
@@ -388,6 +382,22 @@ const App = () => {
                   I made this e commerce design, I can also build it and give it
                   full store functionallity. But I am lazy
                 </span>
+              </h5>
+            </aside>
+          </div>
+          <div
+            onClick={() =>
+              window.open("https://berniko-videowork.vercel.app", "_blank")
+            }
+          >
+            <div></div>
+            <aside>
+              <h5>
+                Name: <span>Videowork</span>
+              </h5>
+              <h5>
+                Description:
+                <span>I made this website for my client.</span>
               </h5>
             </aside>
           </div>

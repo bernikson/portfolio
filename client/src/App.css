@@ -2,6 +2,16 @@
   background-color: var(--mainColor);
 }
 
+#web-logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../src/images/logo.png");
+  width: 3.4rem;
+  height: 3.4rem;
+  position: absolute;
+}
+
 nav {
   background-color: var(--mainColor);
   display: flex;
@@ -12,6 +22,8 @@ nav {
   width: 100%;
   z-index: 10;
   transition: 0.8s;
+  position: fixed !important;
+  top: 0;
 }
 
 nav > h1 {
@@ -19,6 +31,7 @@ nav > h1 {
   color: var(--cyan);
   margin: 0;
   font-weight: 400;
+  margin-left: 4rem;
 }
 
 nav > ul {
@@ -59,6 +72,7 @@ header {
   position: relative;
   overflow: hidden;
   background-attachment: fixed !important;
+  margin-top: 5rem;
 }
 
 #socialmedia-wrapper-one {
@@ -329,6 +343,10 @@ header > a > svg {
   background-image: url("./images/seventhImage.png");
 }
 
+#projects > article > div:nth-child(8) > div {
+  background-image: url("./images/eightImage.png");
+}
+
 #projects > article > div {
   display: flex;
   flex-direction: column;
@@ -442,7 +460,7 @@ header > a > svg {
 }
 
 #contact > article {
-  width: 70vw;
+  width: 50vw;
   margin: auto;
   padding: 3rem 0;
 }
@@ -597,6 +615,9 @@ footer > h6 {
   #projects > article > div > aside > h5 {
     font-size: 1.3rem;
   }
+  #contact > article {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -606,6 +627,7 @@ footer > h6 {
   nav {
     position: relative;
     padding: 1rem 2rem;
+    background-color: var(--mainColor);
   }
   nav > ul {
     position: absolute;
@@ -667,6 +689,9 @@ footer > h6 {
   }
   #services > article > div > svg {
     width: 70%;
+  }
+  #contact > article {
+    width: 100%;
   }
 }
 
